@@ -46,7 +46,7 @@
   --bs-body-font-family: var(--marca-fuente);
 }
 
-.btn-filtro {
+.btn-outline-primary {
   --bs-btn-color: var(--marca-primario);
   --bs-btn-border-color: var(--marca-primario);
   --bs-btn-hover-color: #ffffff;
