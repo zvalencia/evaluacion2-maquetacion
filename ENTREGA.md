@@ -1,11 +1,11 @@
 # Entrega - Evaluación 2
 
-Nombre: 
-Tema número: 
-Tema: 
-Empresa: 
+Nombre: Yeison Valencia Zapata
+Tema número: 18
+Tema: Ferretería
+Empresa: Ferretería El Tornillo
 
-Repositorio: https://github.com/USUARIO/evaluacion2-maquetacion
+Repositorio: https://github.com/zvalencia/evaluacion2-maquetacion.git
 Sitio publicado: https://USUARIO.github.io/evaluacion2-maquetacion/
 
 ## Resultado del verificador

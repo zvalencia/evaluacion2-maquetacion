@@ -27,21 +27,130 @@
  */
 
 const configuracion = {
-  titulo: '',
-  campoOrden: '',
-  etiquetaValor: ''
+  titulo: 'Ferretería El Tornillo',
+  campoOrden: 'precio',
+  etiquetaValor: 'Precio'
 };
 
 const items = [
-  // Ejemplo de la forma (tema Mercado campesino). Bórralo y escribe los tuyos.
-  // {
-  //   id: 1,
-  //   nombre: 'Mora de Castilla',
-  //   categoria: 'frutas',
-  //   descripcion: 'Mora fresca de las veredas de Santa Rosa de Cabal.',
-  //   imagen: 'img/placeholder.svg',
-  //   precio: 6500,
-  //   unidad: 'libra',
-  //   municipio: 'Santa Rosa de Cabal'
-  // },
+  {
+    id: 1,
+    nombre: 'Taladro percutor',
+    categoria: 'electricas',
+    descripcion: 'Taladro de 650 W con maletín.',
+    imagen: 'img/placeholder.svg',
+    precio: 289000,
+    marca: 'Fuerza',
+    garantiaMeses: 24
+  },
+  {
+    id: 2,
+    nombre: 'Pulidora angular',
+    categoria: 'electricas',
+    descripcion: 'Pulidora de 4 1/2 pulgadas y 850 W.',
+    imagen: 'img/placeholder.svg',
+    precio: 245000,
+    marca: 'Fuerza',
+    garantiaMeses: 12
+  },
+  {
+    id: 3,
+    nombre: 'Sierra caladora',
+    categoria: 'electricas',
+    descripcion: 'Cortes rectos y curvos en madera.',
+    imagen: 'img/placeholder.svg',
+    precio: 210000,
+    marca: 'Corte',
+    garantiaMeses: 12
+  },
+  {
+    id: 4,
+    nombre: 'Martillo de uña',
+    categoria: 'manuales',
+    descripcion: 'Martillo de 16 onzas con mango de fibra',
+    imagen: 'img/placeholder.svg',
+    precio: 35000,
+    marca: 'Acero',
+    garantiaMeses: 6
+  },
+  {
+    id: 5,
+    nombre: 'Juego de destornilladores',
+    categoria: 'manuales',
+    descripcion: 'Seis destornilladores de pala y estrella.',
+    imagen: 'img/placeholder.svg',
+    precio: 42000,
+    marca: 'Acero',
+    garantiaMeses: 6
+  },
+  {
+    id: 6,
+    nombre: 'Flexómetro 5 m',
+    categoria: 'manuales',
+    descripcion: 'Cinta métrica con freno y gancho.',
+    imagen: 'img/placeholder.svg',
+    precio: 18000,
+    marca: 'Medida',
+    garantiaMeses: 3
+  },
+  {
+    id: 7,
+    nombre: 'Pintura blanca',
+    categoria: 'pintura',
+    descripcion: 'Galón de pintura tipo 1 para interiores.',
+    imagen: 'img/placeholder.svg',
+    precio: 78000,
+    marca: 'Colorama',
+    garantiaMeses: 0
+  },
+  {
+    id: 8,
+    nombre: 'Rodillo de felpa',
+    categoria: 'pintura',
+    descripcion: 'Rodillo de 9 pulgadas con bandeja.',
+    imagen: 'img/placeholder.svg',
+    precio: 22000,
+    marca: 'Colorama',
+    garantiaMeses: 0
+  },
+  {
+    id: 9,
+    nombre: 'Esmalte anticorrosivo',
+    categoria: 'pintura',
+    descripcion: 'Cuarto de galón para metal.',
+    imagen: 'img/placeholder.svg',
+    precio: 36000,
+    marca: 'Colorama',
+    garantiaMeses: 0
+  },
+  {
+    id: 10,
+    nombre: 'Tubo PVC 1/2',
+    categoria: 'plomeria',
+    descripcion: 'Tubo de presión de 6 metros.',
+    imagen: 'img/placeholder.svg',
+    precio: 15000,
+    marca: 'Hidro',
+    garantiaMeses: 0
+  },
+  {
+    id: 11,
+    nombre: 'Llave de lavaplatos',
+    categoria: 'plomeria',
+    descripcion: 'Grifería cromada de cuello alto.',
+    imagen: 'img/placeholder.svg',
+    precio: 68000,
+    marca: 'Hidro',
+    garantiaMeses: 12
+  },
+  {
+    id: 12,
+    nombre: 'Cinta de teflón',
+    categoria: 'plomeria',
+    descripcion: 'Rollo para sellar roscas.',
+    imagen: 'img/placeholder.svg',
+    precio: 2500,
+    marca: 'Hidro',
+    garantiaMeses: 0
+  }
 ];

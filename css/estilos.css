@@ -34,5 +34,40 @@
  */
 
 :root {
-  /* TODO */
+  --marca-primario: #1f3a5f;
+  --marca-secundario: #f2a900;
+  --marca-fondo: #f4f5f7;
+  --marca-texto: #15202b;
+  --marca-fuente: "Archivo", sans-serif;
+  --marca-fuente-titulos: "Archivo Black", sans-serif;
+
+  --bs-body-bg: var(--marca-fondo);
+  --bs-body-color: var(--marca-texto);
+  --bs-body-font-family: var(--marca-fuente);
+}
+
+.btn-filtro {
+  --bs-btn-color: var(--marca-primario);
+  --bs-btn-border-color: var(--marca-primario);
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: var(--marca-primario);
+  --bs-btn-hover-border-color: var(--marca-primario);
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: var(--marca-primario);
+  --bs-btn-active-border-color: var(--marca-primario);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--marca-fuente-titulos);
+}
+
+.navbar {
+  background-color: var(--marca-primario);
+}
+
+:focus-visible {
+  outline: 3px solid var(--marca-secundario);
+  outline-offset: 2px;
 }
