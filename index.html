@@ -3,43 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- TODO (issue #2): cambia el título por el nombre de tu proyecto -->
-  <title>Plantilla Evaluación 2</title>
+  <title>Ferretería El Tornillo</title>
 
-  <!-- Bootstrap 5.3 por CDN. Tu hoja de estilos va DESPUÉS para poder personalizarlo. -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <!-- TODO (issue #1): aquí va el <link> de Google Fonts con las dos fuentes de tu Manual de marca -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
+  <a class="visually-hidden-focusable" href="#contenido">Saltar al contenido</a>
 
-  <!--
-    TODO (issue #2): estructura de la página. Consulta ISSUES.md, la guía y la
-    página de tu empresa en el Manual de marca: ahí dice cómo va la navbar,
-    el hero, cuántas columnas tiene el catálogo y de qué lado va la imagen
-    de "acerca de".
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand" href="#">Ferretería El Tornillo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal"
+          aria-expanded="false"
+          aria-label="Alternar navegación"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#seccion-catalogo">Catálogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#acerca">Acerca de</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    1. Enlace "Saltar al contenido" que lleve a #contenido.
-    2. header con la navbar de Bootstrap que se pliega en celular
-       (navbar-expand-lg, navbar-toggler accesible, div.collapse).
-    3. main id="contenido" con:
-       - Una sección de presentación con el ÚNICO h1 de la página.
-       - Sección del catálogo (section + aria-labelledby + h2) con:
-           * Grupo de filtros: div.btn-group role="group" aria-label="..."
-             con un botón "todas" y uno por categoría:
-             <button type="button" class="btn btn-outline-primary" data-categoria="..." aria-pressed="false">
-           * label + input type="search" id="buscador"
-           * label + select id="orden" con las opciones
-             nombre-asc, valor-asc y valor-desc
-           * p id="contador" aria-live="polite"
-           * div id="catalogo" class="row ..." (aquí JS pinta las tarjetas)
-       - section id="acerca" (aria-labelledby + h2) con una grilla de 2 columnas.
-    4. footer.
-  -->
+  <main id="contenido">
+    <section class="py-5" aria-labelledby="titulo-principal">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-lg-7">
+            <h1 id="titulo-principal">Todo para construir y reparar</h1>
+            <p class="lead">Todo para construir y reparar</p>
+            <a class="btn btn-primary" href="#seccion-catalogo">Ver productos</a>
+          </div>
+          <div class="col-12 col-lg-5">
+            <img
+              src="img/placeholder.svg"
+              alt="Herramientas y materiales de Ferretería El Tornillo"
+              class="img-fluid rounded w-100"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Bootstrap JS (necesario para que la navbar se pliegue) -->
+    <section id="seccion-catalogo" class="py-5" aria-labelledby="titulo-catalogo">
+      <div class="container">
+        <h2 id="titulo-catalogo" class="mb-4">Catálogo</h2>
+
+        <div class="row g-3 align-items-center mb-3">
+          <div class="col-12 col-xl-auto">
+            <div class="btn-group flex-wrap" role="group" aria-label="Filtrar por categoría">
+              <button type="button" class="btn btn-outline-primary active" data-categoria="todas" aria-pressed="true">Todas</button>
+              <button type="button" class="btn btn-outline-primary" data-categoria="electricas" aria-pressed="false">Eléctricas</button>
+              <button type="button" class="btn btn-outline-primary" data-categoria="manuales" aria-pressed="false">Manuales</button>
+              <button type="button" class="btn btn-outline-primary" data-categoria="pintura" aria-pressed="false">Pintura</button>
+              <button type="button" class="btn btn-outline-primary" data-categoria="plomeria" aria-pressed="false">Plomería</button>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl">
+            <label for="buscador" class="form-label visually-hidden">Buscar producto</label>
+            <input type="search" id="buscador" class="form-control" placeholder="Buscar...">
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-auto">
+            <label for="orden" class="form-label visually-hidden">Ordenar por</label>
+            <select id="orden" class="form-select" aria-label="Ordenar por">
+              <option value="nombre-asc">Nombre (A-Z)</option>
+              <option value="valor-asc">Precio (menor a mayor)</option>
+              <option value="valor-desc">Precio (mayor a menor)</option>
+            </select>
+          </div>
+        </div>
+
+        <p id="contador" aria-live="polite" class="mb-4">Mostrando 12 de 12</p>
+
+        <div id="catalogo" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4"></div>
+      </div>
+    </section>
+
+    <section id="acerca" class="py-5" aria-labelledby="titulo-acerca">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-md-6">
+            <h2 id="titulo-acerca">Ferretería de barrio</h2>
+            <p>
+              El Tornillo atiende al barrio desde 1985. Vendemos por unidad, asesoramos sin costo y llevamos los pedidos a domicilio en Dosquebradas y Pereira.
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <img
+              src="img/placeholder.svg"
+              alt="Mostrador y atención en Ferretería El Tornillo"
+              class="img-fluid rounded w-100"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto" class="py-4 border-top">
+    <div class="container">
+      <p class="fw-bold mb-1">Ferretería El Tornillo</p>
+      <p class="mb-1">Carrera 8 n.º 25-60, Dosquebradas</p>
+      <p class="mb-1">606 341 8181</p>
+      <p class="mb-1">Lunes a sábado de 7:00 a. m. a 7:00 p. m.</p>
+      <p class="mb-0">ventas@eltornillo.co</p>
+    </div>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- El orden importa: primero los datos, después la lógica -->
   <script src="js/datos.js"></script>
   <script src="js/app.js"></script>
 </body>
