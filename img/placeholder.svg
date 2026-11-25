@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" role="img" aria-label="Imagen de relleno">
+  <rect width="600" height="400" fill="#e9ecef"/>
+  <rect x="220" y="130" width="160" height="120" rx="8" fill="none" stroke="#6c757d" stroke-width="8"/>
+  <circle cx="260" cy="170" r="14" fill="#6c757d"/>
+  <path d="M232 238 l48 -50 l32 32 l24 -22 l36 40 z" fill="#6c757d"/>
+  <text x="300" y="300" font-family="Arial, sans-serif" font-size="22" fill="#495057" text-anchor="middle">Imagen pendiente</text>
+</svg>

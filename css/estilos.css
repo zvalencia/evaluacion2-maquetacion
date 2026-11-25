@@ -1,0 +1,38 @@
+/*
+ * estilos.css - Guía de estilo de tu proyecto
+ * Se enlaza DESPUÉS de Bootstrap, por eso puede personalizarlo.
+ *
+ * TODO (issue #1): aplica la guía de diseño de tu empresa (Manual de marca).
+ * Los colores y las fuentes NO se eligen: se copian exactos del manual.
+ *
+ * 1. En :root, estas variables:
+ *      --marca-primario    botones activos y acentos (texto blanco encima: contraste 4.5:1)
+ *      --marca-secundario  detalles, bordes, badges
+ *      --marca-fondo       fondo de la página
+ *      --marca-texto       texto principal (contraste 4.5:1 sobre el fondo)
+ *      --marca-fuente          fuente del cuerpo del texto (de Google Fonts)
+ *      --marca-fuente-titulos  fuente de los títulos (de Google Fonts)
+ *
+ * 2. Conecta tu marca con Bootstrap sobrescribiendo sus variables:
+ *      --bs-body-bg, --bs-body-color y --bs-body-font-family con var(--marca-...)
+ *
+ * 3. Personaliza el botón de los filtros con al menos 3 variables --bs-btn-*
+ *    (por ejemplo --bs-btn-color, --bs-btn-border-color, --bs-btn-active-bg).
+ *
+ * 4. Aplica la fuente de títulos: h1, h2, h3 { font-family: var(--marca-fuente-titulos); }
+ *
+ * 5. Colorea la navbar como dice tu manual (.navbar { background-color: ... }).
+ *
+ * 6. Agrega una regla :focus-visible. Nunca uses outline: none.
+ *
+ * Consulta:
+ *   https://developer.mozilla.org/es/docs/Web/CSS/Using_CSS_custom_properties
+ *   https://getbootstrap.com/docs/5.3/customize/css-variables/
+ *   https://getbootstrap.com/docs/5.3/components/buttons/#variables
+ *   https://webaim.org/resources/contrastchecker/
+ *   https://fonts.google.com/
+ */
+
+:root {
+  /* TODO */
+}
