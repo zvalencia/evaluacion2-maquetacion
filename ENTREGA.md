@@ -6,7 +6,7 @@ Tema: Ferretería
 Empresa: Ferretería El Tornillo
 
 Repositorio: https://github.com/zvalencia/evaluacion2-maquetacion.git
-Sitio publicado: https://USUARIO.github.io/evaluacion2-maquetacion/
+Sitio publicado: https://zvalencia.github.io/evaluacion2-maquetacion/
 
 ## Resultado del verificador
 
